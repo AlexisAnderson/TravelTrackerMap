@@ -3,8 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .imgbox {
+                display: grid;
+                height: 100%;
+            }
+            .center-fit {
+                max-width: 100%;
+                max-height: 100vh;
+                margin: auto;
+            }
+        </style>
     </head>
     <body>
-        <img src="src/BlankMap-World.svg">
+        <div class="imgbox">
+            <img class="center-fit" src="src/BlankMap-World.svg">
+        </div>
     </body>
 </html>
