@@ -17,11 +17,27 @@
                 max-height: 100vh;
                 margin: auto;
             }
+            .scaling-svg-container {
+                position: relative; 
+                height: 0; 
+                width: 100%; 
+                padding: 0;
+                padding-bottom: 100%; 
+                /* override this inline for aspect ratio other than square */
+            }
+            .scaling-svg {
+                position: absolute; 
+                height: 100%; 
+                width: 100%; 
+                left: 0; 
+                top: 0;
+            }
         </style>
     </head>
     <body>
         <div class="imgbox">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">
+            <div class="scaling-svg-container" style="padding-bottom: 92%">
+            <svg class="scaling-svg" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">
                 <title>World Map</title>
                 <style id="style_css_sheet" type="text/css">
             
@@ -3292,6 +3308,7 @@
             -->
             
             </svg>
+        </div>
         </div>
     </body>
 </html>
