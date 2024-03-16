@@ -3312,9 +3312,13 @@
             </div>
         </div>
         <script>
-            $('#gb').on('click', function () {
-                $('#gb').css('background', '#ccc');
-            });
+            let uk = document.getElementById("gb");
+            function changeColor(color) {
+                uk.style.background = color;
+            }
+            function myFun() {
+                changeColor('aqua');
+            }
         </script>
     </body>
 </html>
