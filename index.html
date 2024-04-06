@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="log.js"></script>
         <style>
             * {
                 margin: 0;
@@ -37,10 +38,13 @@
                 <h1>Travel Tracker</h1>
             </div>
             <div class="center-fit">
-                <label for="Name">Name:</label>
-                <input type="text" id="Name" name="Name">
-                <label for="Country">Country:</label>
-                <input type="text" id="Country" name="Country">
+                <form onsubmit="return TravelLog()">
+                    <label for="Name">Name:</label>
+                    <input type="text" id="Name" name="Name" required>
+                    <label for="Country">Country:</label>
+                    <input type="text" id="Country" name="Country" required>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
             <img class="center-fit" src="src\BlankMap-World.svg" alt="World Map">
         </div>
