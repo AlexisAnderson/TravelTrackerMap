@@ -12,13 +12,13 @@ function TravelLog() {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i][0] == Name) {
             arr[i].push(Input);
-            window.alert("Thank you "+arr[i][0]+" for your country submission of "+arr[i][1]);
+            window.alert("Thank you "+name+" for your country submission of "+country+"!");
             break;
         }
         if (arr[i][0] != Name && arr[i].length == 0) {
             arr[i][0] = Name
             arr[i].push(Input);
-            window.alert("Thank you "+arr[i][0]+" for your country submission of "+arr[i][1]);
+            window.alert("Thank you "+name+" for your country submission of "+country+"!");
             break;
         } else {
             continue;
